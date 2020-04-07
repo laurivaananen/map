@@ -1,5 +1,6 @@
 import React from "react";
 import ChartWrapper from "./ChartWrapper";
+import EuropeMapWrapper from "./EuropeMapWrapper";
 import { SelectDropdown } from "./SelectDropdown";
 
 export enum Gender {
@@ -20,8 +21,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <SelectDropdown genderSelected={this.genderSelected} />
-        <ChartWrapper gender={this.state.gender} />
+        <EuropeMapWrapper />
+        {/* <SelectDropdown genderSelected={this.genderSelected} />
+        <ChartWrapper gender={this.state.gender} /> */}
       </div>
     );
   }
